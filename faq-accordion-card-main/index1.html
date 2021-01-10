@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Frontend Mentor | FAQ Accordion Card </title>
+    <style>
+        .attribution{
+            text-align: center;
+            width: auto;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="bodywrap">
+            <div class="svg"> 
+                <img src="images/illustration-woman-online-mobile.svg" class="faqimg1">
+                <img src="images/bg-pattern-mobile.svg" class="faqimg2">
+            </div>
+            <div class='faqimg5'>
+                <img src="images/illustration-box-desktop.svg" alt="" id="faqimg5">
+            </div>
+            <div class="container">
+                <div class="svg1">
+                    <img src="images/illustration-woman-online-desktop.svg" alt="" class=faqimg4>
+                </div>
+                <div class="faqbox">
+                    <div class="faqheader">
+                        <h1> FAQ </h1>
+                    </div> 
+                    <div class="faqquestions">
+                        <div class="faqquestion">
+                            <div class="faqquestion-cont">How many team members can I invite?<span class="arrowdown"> <img src="images/icon-arrow-down.svg" alt=""></span></div>
+                            <div class="answer">As much as you can!</div>
+                        </div>
+                        
+
+                        <div class="faqquestion">
+                            <div class="faqquestion-cont">What is the maximum file upload size?<span class="arrowdown"> <img src="images/icon-arrow-down.svg" alt=""></span></div>
+                            <div class="answer">No more than 2GB. All files in your account must fit your alloted storage space.</div>
+                        </div>
+
+                        <div class="faqquestion">
+                            <div class="faqquestion-cont">How do I reset my password<span class="arrowdown"> <img src="images/icon-arrow-down.svg" alt=""></span>
+                            </div>
+                            <div class="answer">Click on the "reset password" link on your profile, the link for password reset would be forwarded to your email</div>
+                        </div>
+                        
+                        <div class="faqquestion">
+                            <div class="faqquestion-cont">Can I cancel my subscription?<span class="arrowdown"> <img src="images/icon-arrow-down.svg" alt=""></span>
+                            </div>
+                            <div class="answer">If you feel unsatisfied with our product.</div>
+                        </div>
+                        
+                        <div class="faqquestion">
+                            <div class="faqquestion-cont">Do you provide additional support?<span class="arrowdown"> <img src="images/icon-arrow-down.svg" alt=""></span>
+                            </div>
+                            <div class="answer">Yes, contact any of the admins for help.</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let question = document.getElementsByClassName("faqquestion-cont")
+            let question_content = document.getElementsByClassName("faqquestion");
+
+            for(i=0; i<question_content.length; i++){
+                question_content[i].addEventListener("click", function(){
+                    this.classList.toggle("unfold");
+                })
+            }
+        </script>
+
+        <div class="attribution"> <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam">Front End Mentor</a> Challenge completed by <a href="https://https://github.com/DrDev-Py/frontendmentor-faq-accordion-card">Chukwumaeze Emmanuel</a></div>
+
+    </body>
+</html>
